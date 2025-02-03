@@ -23,6 +23,12 @@ This is simply a list of interesting, useful, or fun Linux commands.
   * `if=<filename/device>`: Input
   * `of=<filename/device>`: Output
 * `sudo -i`: Run multiple sudo commands one after another (looks like `sudo su`).
+* `stat`: Provide detailed file information. Like the *inode* associated with the file, when it was last modified, created etc.
+* `free`: Display basic information on free space on the system. Includes RAM and SWAP space for the system.
+* `vmstat`: Display basic information on the virtual memory. Includes additional flags for mor detailed information like `--slabs`. This focuses more on *processes*.
+* `dumpe2fs`: Print superblock and other file system information.
+* `mount`: Display mounted filesystems or mount new devices.
+
 ### Git
 * `git remote update`: This will update all of the branches that we are currently set to track, unlike `git fetch` which will only update the information for the branch we are currently on. This does not merge the changes into our current files!
 * `git push --mirror <URL>`: Push changes to the specified UR. This will also include any *refs* and things used by the *remote* branch to track changes. So we would use this if we are uploading our entire repository to another hosting provider. You should only use this once on the initial push!
@@ -50,6 +56,11 @@ This is simply a list of interesting, useful, or fun Linux commands.
   * `-ffreestanding`: No main function.
   * `-nostdlib`: Do not link to c-standard library.
 
+### Kernel Modules
+* `lsmod`: list the modules or information on a specified module.
+* `rmmod`: Remove a module from the kernel (aggressive).
+* `insmode`: Add a module to the kernel. Does not automatically load dependencies.
+* `modprobe`: Add or remove a module from the kernel, resolve dependencies
 ### Assemblers/Objects
 * `as`: Assembler used by gcc most of the time.
 * `gas`: GNU assembler
